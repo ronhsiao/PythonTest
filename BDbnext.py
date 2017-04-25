@@ -3,8 +3,8 @@ import time
 from bs4 import BeautifulSoup
 from selenium import webdriver
 
-url = "https://www.bnext.com.tw/categories/iot"
-f = open('D:\TestIot.txt', 'a', encoding='UTF-8')
+url = "https://www.bnext.com.tw/categories/bigdata"
+f = open('D:\TestBD.txt', 'a', encoding='UTF-8')
 rel = 0
 rel2 = 1
 clicktimes = 1
