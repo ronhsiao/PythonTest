@@ -40,7 +40,7 @@ while Sat < 1493222400:
                                                          "Referer": "http://news.cnyes.comnews/id/3792704",
                                                          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"})
                 newsres.encoding = 'utf'
-                soup = BeautifulSoup(newsres.text, "lxml")
+                soup = BeautifulSoup(newsres.text, "lxml") 
                 newsres.close()
                 time.sleep(3)
                 for soup2 in soup.select(
