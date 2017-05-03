@@ -11,7 +11,7 @@ Eat = 1357055999  # 20130101 23點59分59秒
 page = 1
 
 lastpage = 1
-f = open('D:\TestStock.txt', 'a', encoding='UTF-8')
+f = open('D:\cnyesforex.txt', 'a', encoding='UTF-8')
 feed = 1
 while Sat < 1493568000:
     print("Sat=" + str(Sat))
