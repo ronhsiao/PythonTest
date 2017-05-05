@@ -3,13 +3,13 @@ from bs4 import BeautifulSoup
 
 # https://buzzorange.com/techorange/?s=AR+VR
 # https://buzzorange.com/techorange/page/2/?s=AR+VR
-f = open('D:\\buzzARVR.txt', 'a', encoding='UTF-8')
+f = open('D:\\buzzIOT.txt', 'a', encoding='UTF-8')
 k = 1
 links = []
 j = 0
-url = "https://buzzorange.com/techorange/?s=AR+VR"
+url = "https://buzzorange.com/techorange/?s=%E7%89%A9%E8%81%AF%E7%B6%B2"
 x = 1
-while x < 113:
+while x < 90:
     res = requests.get(url, headers={
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36"})
     res.encoding = 'utf'
@@ -32,6 +32,6 @@ while x < 113:
         f.write("\n\n")
         j += 1
     x += 1
-    url = "https://buzzorange.com/techorange/page/" + str(x) + "/?s=AR+VR"
+    url = "https://buzzorange.com/techorange/page/" + str(x) + "/?s=%E7%89%A9%E8%81%AF%E7%B6%B2"
     print("page" + str(x))
 f.close()
