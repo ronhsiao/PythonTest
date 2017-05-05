@@ -9,7 +9,7 @@ rel = 0
 rel2 = 1
 clicktimes = 1
 k = 1
-while (rel-rel2)!=0:
+while (rel - rel2) != 0:
     j = 0
     links1 = []
     driver = webdriver.PhantomJS(executable_path='D:/browser/phantomjs/bin/phantomjs.exe')  # 用phantomjs
