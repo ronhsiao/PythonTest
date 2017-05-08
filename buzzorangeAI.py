@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 # https://buzzorange.com/techorange/?s=AR+VR
 # https://buzzorange.com/techorange/page/2/?s=AR+VR
-f = open('D:\\buzzAI.txt', 'a', encoding='UTF-8')
+f = open('D:\\TestAI2.txt', 'a', encoding='UTF-8')
 k = 1
 links = []
 j = 0
