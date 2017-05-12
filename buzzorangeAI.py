@@ -10,7 +10,7 @@ cur=conn.cursor()
 
 # https://buzzorange.com/techorange/?s=AR+VR
 # https://buzzorange.com/techorange/page/2/?s=AR+VR
-f = open('D:\\T.txt', 'a', encoding='UTF-8')
+# f = open('D:\\T.txt', 'a', encoding='UTF-8')
 k = 1
 links = []
 j = 0
@@ -43,7 +43,7 @@ while x < 2:
         cur.execute("insert into 2crawler(Postvalue,Href,Postnumber) values(%s,%s,%s);",newvalue)
 
         # f.write("\n\n")
-        f.write("value" + str(k))
+        # f.write("value" + str(k))
         k += 1
         # f.write("\n\n")
         j += 1
