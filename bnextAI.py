@@ -2,24 +2,26 @@ import requests
 import time
 from bs4 import BeautifulSoup
 from selenium import webdriver
+import pymysql as mariadb
 
+conn = mariadb.connect(host='localhost', user='root', passwd='rh119879944', charset='utf8', db='sexyblocks')
+cur = conn.cursor()
 url = "https://www.bnext.com.tw/categories/ai"
-f = open('D:\TestAI.txt', 'a', encoding='UTF-8')
 rel = 0
 rel2 = 1
-clicktimes = 1
 k = 1
-while (rel - rel2) != 0:
+# while (rel-rel2)!=0:
+while rel < 48:
     j = 0
     links1 = []
-    driver = webdriver.PhantomJS(executable_path='D:/browser/phantomjs/bin/phantomjs.exe')  # 用phantomjs
+    driver = webdriver.PhantomJS(executable_path='D:/browser/phantomjs/bin/phantomjs.exe')
     driver.get(url)
-    print("loading driver complete")
+    # print("loading driver complete")
     driver.execute_script("document.querySelector('div.more_btn').setAttribute('rel1','" + str(rel) + "')")
     rel2 = int(driver.find_element_by_class_name('more_btn').get_attribute("rel1"))
     driver.find_element_by_class_name('more_btn').click()
     time.sleep(3)
-    print("loading complete2")
+    # print("loading complete2")
     driver.encoding = 'utf'
     dps = driver.page_source
     soup = BeautifulSoup(dps, "lxml")
@@ -29,22 +31,23 @@ while (rel - rel2) != 0:
         res21 = requests.get(links1[j])
         res21.encoding = 'utf'
         soup21 = BeautifulSoup(res21.text, "lxml")
-        print("request" + str(j))
-        j += 1
         time.sleep(3)
+
+
+        dfList = " "
+        newvalue = []
         for soup31 in soup21.select(
-                '#article_view_body > div.main_block > div > div > div.content.htmlview > div > div.left p'):  # 用for迴圈取 會按照網頁<p>順序依序取出
-            f.write(soup31.get_text(separator="\n\n", strip=True))
-        f.write("\n\n")
-        f.write("value" + str(k))
+                '#article_view_body > div.main_block > div > div > div.content.htmlview > div > div.left > article.main_content'):
+            article = soup31.get_text(strip=True)
+            article2 = article.rstrip()
+            dfList = dfList + article2
+        print(dfList)
+        newvalue = [dfList, links1[j],k]
+        cur.execute("insert into 2crawler(Postvalue,Href,Postnumber) values(%s,%s,%s);", newvalue)
+        j += 1
         k += 1
-        f.write("\n\n")
-    print("loop" + str(clicktimes))
-    clicktimes = clicktimes + 1
-
-    f.write("\n\n")
+    # df = pd.DataFrame(articlefinal)
     driver.close()
-
-f.close()
-# print(len(links))
-print(links1[len(links1) - 1])
+    # df.to_csv('bnextAI.csv')
+conn.commit()
+conn.close()
