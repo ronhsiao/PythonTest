@@ -10,6 +10,7 @@ url = "https://www.bnext.com.tw/categories/ai"
 rel = 0
 rel2 = 1
 k = 1
+
 # while (rel-rel2)!=0:
 while rel < 48:
     j = 0
