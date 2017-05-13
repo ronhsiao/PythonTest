@@ -1,5 +1,53 @@
-[INFO  - 2017-04-20T15:08:55.280Z] GhostDriver - Main - running on port 53341
-[INFO  - 2017-04-20T15:08:56.296Z] Session [46238d10-25db-11e7-b8cf-37bc477644af] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-04-20T15:08:56.296Z] Session [46238d10-25db-11e7-b8cf-37bc477644af] - page.customHeaders:  - {}
-[INFO  - 2017-04-20T15:08:56.296Z] Session [46238d10-25db-11e7-b8cf-37bc477644af] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2017-04-20T15:08:56.296Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 46238d10-25db-11e7-b8cf-37bc477644af
+[INFO  - 2017-05-13T03:00:58.895Z] GhostDriver - Main - running on port 54261
+[INFO  - 2017-05-13T03:01:02.313Z] Session [65ea8e00-3788-11e7-b883-e1f584f01da4] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-05-13T03:01:02.313Z] Session [65ea8e00-3788-11e7-b883-e1f584f01da4] - page.customHeaders:  - {}
+[INFO  - 2017-05-13T03:01:02.313Z] Session [65ea8e00-3788-11e7-b883-e1f584f01da4] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-05-13T03:01:02.313Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 65ea8e00-3788-11e7-b883-e1f584f01da4
+[ERROR - 2017-05-13T03:01:16.339Z] Session [65ba5640-3788-11e7-a836-c91c6e32c42f] - page.onError - msg: ReferenceError: Can't find variable: asynpchomead
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-13T03:01:16.339Z] Session [65ba5640-3788-11e7-a836-c91c6e32c42f] - page.onError - stack:
+  eval code (undefined:1)
+  eval (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-13T03:01:16.354Z] Session [65ba5640-3788-11e7-a836-c91c6e32c42f] - page.onError - msg: ReferenceError: Can't find variable: asynpchomead
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-13T03:01:16.354Z] Session [65ba5640-3788-11e7-a836-c91c6e32c42f] - page.onError - stack:
+  eval code (undefined:1)
+  eval (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-13T03:01:16.361Z] Session [65ba5640-3788-11e7-a836-c91c6e32c42f] - page.onError - msg: ReferenceError: Can't find variable: asynpchomead
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-13T03:01:16.361Z] Session [65ba5640-3788-11e7-a836-c91c6e32c42f] - page.onError - stack:
+  eval code (undefined:1)
+  eval (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-13T03:01:13.773Z] Session [63728920-3788-11e7-9047-41f9dc8db847] - page.onError - msg: ReferenceError: Can't find variable: asynpchomead
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-13T03:01:13.773Z] Session [63728920-3788-11e7-9047-41f9dc8db847] - page.onError - stack:
+  eval code (undefined:1)
+  eval (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-13T03:01:13.780Z] Session [63728920-3788-11e7-9047-41f9dc8db847] - page.onError - msg: ReferenceError: Can't find variable: asynpchomead
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-13T03:01:13.781Z] Session [63728920-3788-11e7-9047-41f9dc8db847] - page.onError - stack:
+  eval code (undefined:1)
+  eval (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-13T03:01:08.932Z] Session [62e82370-3788-11e7-862a-7183b92d66bc] - page.onError - msg: ReferenceError: Can't find variable: asynpchomead
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-05-13T03:01:08.932Z] Session [62e82370-3788-11e7-862a-7183b92d66bc] - page.onError - stack:
+  eval code (undefined:1)
+  eval (:0)
+
+  phantomjs://platform/console++.js:263 in error

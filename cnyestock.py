@@ -15,7 +15,7 @@ Eat = 1357055999  # 20130101 23點59分59秒
 f = open('D:\cnyesStock.txt', 'a', encoding='UTF-8')
 feed = 1
 # z=1
-while Sat < 1493568000:
+while Sat < 1388505600:
     print("Sat=" + str(Sat))
     print("S start")
     page = 1
@@ -89,7 +89,7 @@ while Sat < 1493568000:
                 #     article2 = article.rstrip()
                 #     dfList = dfList + article2
                 #     # articlefinal.append(dfList)
-                #     newvalue = [dfList, newsurl, z]
+                # newvalue = [dfList, newsurl, z]
                 # cur.execute("insert into 2crawler(Postvalue,Href,Postnumber) values(%s,%s,%s);", newvalue)
                     f.write(soup2.get_text(separator="\n\n", strip=True))
                 # f.write("\n\n")

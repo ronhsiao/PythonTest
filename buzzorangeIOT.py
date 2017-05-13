@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 # https://buzzorange.com/techorange/?s=AR+VR
 # https://buzzorange.com/techorange/page/2/?s=AR+VR
-f = open('D:\\TestIot2.txt', 'a', encoding='UTF-8')
+f = open('D:\\source\\IOT.txt', 'a', encoding='UTF-8')
 k = 1
 links = []
 j = 0
@@ -23,14 +23,15 @@ while x < 94:
         soupfeeds = BeautifulSoup(feedres.text, "lxml")
         feedres.close()
         print("value"+str(k))
+        dfList=""
         for soupfeed in soupfeeds.select(
                 '#main p'):  # 用for迴圈取 會按照網頁<p>順序依序取出
-            f.write(soupfeed.get_text(separator="\n\n", strip=True))
-        f.write("\n\n")
-        f.write("value" + str(k))
-        k += 1
-        f.write("\n\n")
+            article = soupfeed.get_text(strip=True)
+            article2 = article.rstrip()
+            dfList = dfList + article2
+        f.write(dfList + "\n\n")
         j += 1
+        k += 1
     x += 1
     url = "https://buzzorange.com/techorange/page/" + str(x) + "/?s=%E7%89%A9%E8%81%AF%E7%B6%B2"
     print("page" + str(x))
